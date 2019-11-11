@@ -14,8 +14,7 @@
   import VideoList from './components/VideoList'
   import VideoDetail from './components/VideoDetail'
 
-  // const API_KEY = 'AIzaSyDooqFBDdc3Fcazb6kbisNIFnhM4sBXxfI'
-  const API_KEY = 'AIzaSyB0ToJFPdt3Dp2stb8ynXqHkNe9U0ivB0c'
+  const API_KEY = process.env.VUE_APP_API_KEY || ''
   const SEARCH_URL = 'https://www.googleapis.com/youtube/v3/search'
 
   export default {
