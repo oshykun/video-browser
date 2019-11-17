@@ -1,1 +1,1 @@
-List of Vues.js application to checkout all capabilities of Vue.js
+Small Vues.js applications to checkout all capabilities of Vue.js
