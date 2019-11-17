@@ -39,4 +39,12 @@ export default {
       });
     })).catch(console.error);
   },
+
+  deleteImage(image, token) {
+    const { deletehash } = image;
+    const deleteUrl = `${ROOT_URL}/3/image/${deletehash}`;
+    return axios.delete(deleteUrl, {
+      headers: { 'Authorization': `Bearer ${token}` },
+    }).catch(console.error);
+  },
 };
